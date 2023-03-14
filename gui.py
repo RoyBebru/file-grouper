@@ -241,7 +241,7 @@ class FileGrouperWindow(wx.Frame):
         """Display About Dialog"""
         wx.MessageBox(_("Author: Dmytro Tarasiuk") + os.linesep
                       + _("Email: RoyBebru@Gmail.Com") + os.linesep
-                      + "Git: https://GitHub.Com/roybebru/file-grouper",
+                      + "Git: https://github.com/RoyBebru/file-grouper",
                       "🔱 File Grouper 🔱",
                       wx.OK|wx.ICON_INFORMATION)
 
@@ -253,7 +253,7 @@ class FileGrouperWindow(wx.Frame):
         self.help_window = gui_help.HelpWindow(self, title=_("Description Of Application"))
         self.help_window.Bind(wx.EVT_CLOSE, self.OnHelpClose)
         self.help_window.Show()
- 
+
 
     def OnHelpClose(self, event):
         """While help is closing there must be allowed
@@ -298,7 +298,7 @@ class FileGrouperWindow(wx.Frame):
         common.option_base_dir = tc.GetLineText(0).strip()
         self.ExamStateStatus()
         self.tree_to.SetFocus()
- 
+
     def OnOpen(self, event):
         pathdir = ""
 
