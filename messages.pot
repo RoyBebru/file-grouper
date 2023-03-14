@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2023-03-14 15:05+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: core.py:14
+msgid "Usage format: "
+msgstr ""
+
+#: core.py:19
+msgid "      Where <DEST_ROOT_DIR> under '-d'/'--dir' option is the directory to move "
+msgstr ""
+
+#: core.py:20
+msgid "  categorized files per created assigned subdirectories. The <INSPECTED_DIR> "
+msgstr ""
+
+#: core.py:21
+msgid "  directory must be inspected. Option '-t'/'--types' prints file types per category "
+msgstr ""
+
+#: core.py:22
+msgid "  subdirectory and exits. Option '-h'/'--help' prints this text. Option '-l'/'--links'"
+msgstr ""
+
+#: core.py:23
+msgid "  serves to making links instead of moving files. Option '-G'/'--no-gui' disable GUI mode."
+msgstr ""
+
+#: core.py:68
+msgid "*** Warning: only first option '-d' is applied"
+msgstr ""
+
+#: core.py:86
+msgid "*** Error: in option '-d' '%s' must be other than program directory"
+msgstr ""
+
+#: core.py:90
+msgid "*** Error: must be only one inspected directory"
+msgstr ""
+
+#: core.py:97
+msgid "*** Error: '%s' is not valid directory"
+msgstr ""
+
+#: core.py:103
+msgid "*** Error: -d directory ('%s') cannot be "
+msgstr ""
+
+#: core.py:104
+msgid "(sub-)directory of the inspected directory ('%s')"
+msgstr ""
+
+#: fig:47
+msgid "*** Warning: wxPython module is not installed"
+msgstr ""
+
+#: gui.py:57
+msgid "From"
+msgstr ""
+
+#: gui.py:62
+msgid "To"
+msgstr ""
+
+#: gui.py:84
+msgid "Instead removing do file links"
+msgstr ""
+
+#: gui.py:199
+msgid "Ca&tegory Filter...\tCtrl-T"
+msgstr ""
+
+#: gui.py:200
+msgid "Edit category list and corresponded extensions"
+msgstr ""
+
+#: gui.py:202
+msgid "&Sanity Filter...\tCtrl-S"
+msgstr ""
+
+#: gui.py:203
+msgid "Edit filename symbols substitution list"
+msgstr ""
+
+#: gui.py:210
+msgid "Help"
+msgstr ""
+
+#: gui.py:210
+msgid "Show help window"
+msgstr ""
+
+#: gui.py:242
+msgid "Author: Dmytro Tarasiuk"
+msgstr ""
+
+#: gui.py:243
+msgid "Email: RoyBebru@Gmail.Com"
+msgstr ""
+
+#: gui.py:253 gui.py:270
+msgid "Description Of Application"
+msgstr ""
+
+#: gui.py:284
+msgid "Does not realized yet."
+msgstr ""
+
+#: gui.py:306
+msgid "Choose Directory"
+msgstr ""
+
+#: gui.py:333
+msgid "Folder"
+msgstr ""
+
+#: gui.py:335
+msgid "is not valid. Try again."
+msgstr ""
+
+#: gui.py:431
+msgid "Select folder to inspect"
+msgstr ""
+
+#: gui.py:434
+msgid "You see only expectation result: select folder to put it"
+msgstr ""
+
+#: gui.py:437
+msgid "Press Run button to realize your project in life"
+msgstr ""
+
+#: gui.py:439
+msgid "Selected folders are not suitable to work"
+msgstr ""
+
+#: gui_category.py:60
+msgid "Apply Changes"
+msgstr ""
+
+#: gui_category.py:63
+msgid "Insert"
+msgstr ""
+
+#: gui_category.py:64
+msgid "Delete"
+msgstr ""
+
+#: gui_category.py:128
+msgid "Select any category to insert after"
+msgstr ""
+
+#: gui_help.py:180
+msgid "Link"
+msgstr ""
+
+#: gui_help.py:181
+msgid "will be opened in your standard web browser. Continue?"
+msgstr ""
+
+#: gui_help.py:182
+msgid "Confirm"
+msgstr ""
+

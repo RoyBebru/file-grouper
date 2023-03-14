@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+File Grouper
+Author: Dmytro Tarasiuk
+"""
+
+import common
+common.init() # is called only here one time
+
+import gettext
+
+try:
+   uk = gettext.translation("fig", localedir='./locale', languages=["uk"])
+   uk.install()
+   _ = uk.gettext # Ukraine
+except:
+    _ = lambda _: _
+common._ = _
+
+
+from core import parse_options
+parse_options()
+
+import sys
+import os
+
+"""
+    option_no_gui | is_wx_installed | is_any_to_work() | What to do
+    --------------+-----------------+------------------+--------------------------------------------
+ (1)    False     |      True       |        Any       | Work via GUI
+ (2)    False     |      False      |        True      | Warning "wxPython absent" and work via CLI
+ (3)    False     |      False      |        False     | Warning "wxPython absent" and exit
+ (4)    True      |       Any       |        True      | work via CLI
+ (5)    True      |       Any       |        False     | print help
+"""
+
+import core
+
+if not common.option_no_gui:
+    is_wx_installed = True
+    try:
+        #👇This module is not installed by default: see wxPython
+        import wx
+    except:
+        print(_("*** Warning: wxPython module is not installed"), file=sys.stderr) # (2), (1/2 of 3)
+        is_wx_installed = False
+
+    if is_wx_installed:
+        from useful import switch_to_background
+        from gui import run_gui
+        switch_to_background()
+        run_gui() # (1)
+        quit(0)
+    elif core.is_any_to_do():
+        core.do_everything()) # (1/2 of 3)
+    quit(0)
+
+if core.is_any_to_do():
+    core.do_everything() # (4)
+else:
+    core.print_usage() # (5)

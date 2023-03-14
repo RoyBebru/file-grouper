@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+
+#: core.py:14
+msgid "Usage format: "
+msgstr "Формат виклику: "
+
+#: core.py:19
+msgid "      Where <DEST_ROOT_DIR> under '-d'/'--dir' option is the directory to move "
+msgstr "      Де <DEST_ROOT_DIR> в орції '-d'/'--dir' є базовою текою, куди потраплять "
+
+#: core.py:20
+msgid "  categorized files per created assigned subdirectories. The <INSPECTED_DIR> "
+msgstr "  файли по текам відповідно до категорій. <INSPECTED_DIR> є тією "
+
+#: core.py:21
+msgid "  directory must be inspected. Option '-t'/'--types' prints file types per category "
+msgstr "  текою, що буде проаналізована. Опція '-t'/'--types' виводить розподіл розширень файлів по категоріям "
+
+#: core.py:22
+msgid "  subdirectory and exits. Option '-h'/'--help' prints this text. Option '-l'/'--links'"
+msgstr "  з одноіменними підтеками і виходить. Опція '-h'/'--help' виводить цей текст. Опція '-l'/'--links'"
+
+#: core.py:23
+msgid "  serves to making links instead of moving files. Option '-G'/'--no-gui' disable GUI mode."
+msgstr "  слугує для створення посилань замість переміщень файлів. Опція '-G'/'--no-gui' забороняє графічний режим роботи."
+
+#: core.py:68
+msgid "*** Warning: only first option '-d' is applied"
+msgstr "*** Попередження: враховується тільки одна опція '-d'"
+
+#: core.py:86
+msgid "*** Error: in option '-d' '%s' must be other than program directory"
+msgstr "*** Помилка: в опції '-d' '%s' має бути тека, відмінна від теки програми"
+
+#: core.py:90
+msgid "*** Error: must be only one inspected directory"
+msgstr "*** Помилка: має бути тільки одна тека, що аналізується"
+
+#: core.py:97
+msgid "*** Error: '%s' is not valid directory"
+msgstr "*** Помилка: '%s' не є правильно вказаною текою"
+
+#: core.py:103
+msgid "*** Error: -d directory ('%s') cannot be "
+msgstr "*** Помилка: -d тека ('%s') не може бути "
+
+#: core.py:104
+msgid "(sub-)directory of the inspected directory ('%s')"
+msgstr "(під-)текою теки, що аналізується ('%s')"
+
+#: fig:47
+msgid "*** Warning: wxPython module is not installed"
+msgstr "*** Попередження: модуль wxPython не встановлений"
+
+#: gui.py:57
+msgid "From"
+msgstr "Звідки"
+
+#: gui.py:62
+msgid "To"
+msgstr "Куди"
+
+#: gui.py:84
+msgid "Instead removing do file links"
+msgstr "Не переміщати, а робити посилання"
+
+#: gui.py:199
+msgid "Ca&tegory Filter...\tCtrl-T"
+msgstr "Категории...\tCtrl-T"
+
+#: gui.py:200
+msgid "Edit category list and corresponded extensions"
+msgstr "Редаґування відповідності розширень файлів категоріям-текам"
+
+#: gui.py:202
+msgid "&Sanity Filter...\tCtrl-S"
+msgstr "Перетворення символів імен файлів...\tCtrl-S"
+
+#: gui.py:203
+msgid "Edit filename symbols substitution list"
+msgstr "Редаґування тадлиці символьних замін"
+
+#: gui.py:210
+msgid "Help"
+msgstr "Допомога"
+
+#: gui.py:210
+msgid "Show help window"
+msgstr "Показати вікно допомоги"
+
+#: gui.py:242
+msgid "Author: Dmytro Tarasiuk"
+msgstr "Автор: Дмитро Тарасюк"
+
+#: gui.py:243
+msgid "Email: RoyBebru@Gmail.Com"
+msgstr "Е-пошта: RoyBebru@Gmail.Com"
+
+#: gui.py:253 gui.py:270
+msgid "Description Of Application"
+msgstr "Опис Додатку"
+
+#: gui.py:284
+msgid "Does not realized yet."
+msgstr "Ще не зроблено."
+
+#: gui.py:306
+msgid "Choose Directory"
+msgstr "Виберіть Теку"
+
+#: gui.py:333
+msgid "Folder"
+msgstr "Тека"
+
+#: gui.py:335
+msgid "is not valid. Try again."
+msgstr "не правильна. Спробуй знову."
+
+#: gui.py:431
+msgid "Select folder to inspect"
+msgstr "Виберіть теку для аналізу"
+
+#: gui.py:434
+msgid "You see only expectation result: select folder to put it"
+msgstr "Ви бачите тільки очікуваний результат: виберіть теку, куди його покласти"
+
+#: gui.py:437
+msgid "Press Run button to realize your project in life"
+msgstr "Натисніть кнопку запуску, щоб втілити проект в життя"
+
+#: gui.py:439
+msgid "Selected folders are not suitable to work"
+msgstr "Вибрані теки не сумісні для роботи"
+
+#: gui_category.py:60
+msgid "Apply Changes"
+msgstr "Застосувати зміни"
+
+#: gui_category.py:63
+msgid "Insert"
+msgstr "Вставити"
+
+#: gui_category.py:64
+msgid "Delete"
+msgstr "Видалити"
+
+#: gui_category.py:128
+msgid "Select any category to insert after"
+msgstr "Виберіть певну категорію, щоб можна було за нею вставити"
+
+#: gui_help.py:180
+msgid "Link"
+msgstr "Посилання"
+
+#: gui_help.py:181
+msgid "will be opened in your standard web browser. Continue?"
+msgstr "буде відкрито у вашому стандртному браузері. Продовжити?"
+
+#: gui_help.py:182
+msgid "Confirm"
+msgstr "Підтвердити"
+

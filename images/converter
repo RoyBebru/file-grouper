@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+import sys
+from pathlib import Path
+from wx.tools import img2py
+
+pathname = Path(sys.argv[0])
+image_file = pathname.stem
+if pathname.name == image_file:
+    print(f"Error: use link with name of image + .py exptension", file=sys.stderr)
+    quit(1)
+if not (pathname.parent / image_file).exists():
+    print(f"Error: corresponded file {image_file} does not exists", file=sys.stderr)
+    quit(1)
+python_file = pathname.parent / (image_file + "._py")
+img2py.img2py(image_file=image_file, python_file=python_file,
+              imgName='image_buffer', icon=True)
