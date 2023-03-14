@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import platform
 
 import CONFIG
 
@@ -69,5 +70,5 @@ def init():
 
     global is_win
     is_win = False
-    if sys.platform.lower().find("win") != -1:
+    if platform.system().lower().find("windows") != -1:
         is_win = True

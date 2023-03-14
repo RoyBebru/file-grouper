@@ -4,11 +4,11 @@ The file types order does not matter here.
 """
 CATEGORIES = (
     "archives"  ".tar .tar.gz .tgz .gz   .bzip .bz  .bzip2 .bz2 .zip .zipx .rar .7z .xz" " "
-                ".lz  .lz4    .lzh .lzma .lzo  .lzx .ace",
+                ".lz  .lz4    .lzh .lzma .lzo  .lzx .ace   .msi",
 
     "audio"     ".aa  .aac .ac3 .adx .ahx .wav .aiff .mp1 .mp2 .mp3  .mpc .ogg .ape" " "
                 ".asf .au  .aud .dmf .dts .dxd .flac .mmf .mod .opus .ra  .tta     " " "
-                ".voc .vox .vqf .wma .xm  .mqa .psf  .spc .ym  .vgm",
+                ".voc .vox .vqf .wma .xm  .mqa .psf  .spc .ym  .vgm  .wav .amr",
 
     "video"     ".webm .mkv .flv .vob .ogv .drc .avi .mts .m2ts .ts          " " "
                 ".mov .qt .wmv .rm .rmvb .viv .asf .amv .mp4 .m4p .m4v       " " "
@@ -19,7 +19,7 @@ CATEGORIES = (
 
     "textbooks" ".pdf .epub .fb2 .htmlz .htxt",
 
-    "docs"      ".doc .txt",
+    "docs"      ".doc .txt .docx .xls .xlsx .ppt .pptx .dot .odt",
 
     "work"      ".ai .cdr .yuv .glade .c .cpp .cxx .py .vba .bas .pas .swi" " "
                 ".po .pod .mo  .qxd   .pm",

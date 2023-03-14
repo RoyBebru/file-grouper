@@ -2,6 +2,7 @@
 
 import os
 import sys
+import platform
 
 def silent_quit(exit_code=0):
     """
@@ -15,6 +16,8 @@ def switch_to_background() -> None:
     and continue using command line while program
     continue to work
     """
+    if platform.system().lower().find("windows") != -1:
+        return
     # Create a child process using os.fork() method.
     # Pid greater than 0 represents the parent process
     if os.fork() > 0:

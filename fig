@@ -42,6 +42,9 @@ if not common.option_no_gui:
     is_wx_installed = True
     try:
         #👇This module is not installed by default: see wxPython
+        if common.is_win:
+            # Avoid run error
+            os.environ["WXSUPPRESS_SIZER_FLAGS_CHECK"] = "1"
         import wx
     except:
         print(_("*** Warning: wxPython module is not installed"), file=sys.stderr) # (2), (1/2 of 3)
@@ -50,11 +53,11 @@ if not common.option_no_gui:
     if is_wx_installed:
         from useful import switch_to_background
         from gui import run_gui
-        switch_to_background()
+        switch_to_background() # it does not work under Windows
         run_gui() # (1)
         quit(0)
     elif core.is_any_to_do():
-        core.do_everything()) # (1/2 of 3)
+        core.do_everything() # (1/2 of 3)
     quit(0)
 
 if core.is_any_to_do():
