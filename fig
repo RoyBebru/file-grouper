@@ -10,18 +10,19 @@ import common
 common.init() # is called only here one time
 
 import gettext
+import locale
 
 try:
-   uk = gettext.translation("fig", localedir='./locale', languages=["uk"])
+   (lang, enc) = locale.getdefaultlocale()
+   ix = lang.find('_')
+   if ix != -1:
+       lang = lang[:ix] 
+   uk = gettext.translation("fig", localedir='./locale', languages=[lang])
    uk.install()
    _ = uk.gettext # Ukraine
 except:
     _ = lambda _: _
 common._ = _
-
-
-from core import parse_options
-parse_options()
 
 import sys
 import os
@@ -37,6 +38,8 @@ import os
 """
 
 import core
+
+core.parse_options()
 
 if not common.option_no_gui:
     is_wx_installed = True

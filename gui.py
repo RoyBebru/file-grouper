@@ -337,7 +337,7 @@ class FileGrouperWindow(wx.Frame):
                         wx.OK|wx.ICON_INFORMATION)
             return
 
-        dirs = core.get_reverse_sorted_path_dirs(pathdir)
+        dirs = core.get_reverse_sorted_path_dirs(pathdir, alldirs=True)
         root = tree.GetRootItem()
 
         tree.DeleteChildren(root) # clear tree

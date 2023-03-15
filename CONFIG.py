@@ -3,8 +3,8 @@ Folders and file types per folder.
 The file types order does not matter here.
 """
 CATEGORIES = (
-    "archives"  ".tar .tar.gz .tgz .gz   .bzip .bz  .bzip2 .bz2 .zip .zipx .rar .7z .xz" " "
-                ".lz  .lz4    .lzh .lzma .lzo  .lzx .ace   .msi",
+    "archives"  ".tar .tar.gz .tgz .gz   .bzip .bz  .bzip2 .bz2 .zip    .zipx    .rar .7z .xz" " "
+                ".lz  .lz4    .lzh .lzma .lzo  .lzx .ace   .msi .tar.bz .tar.bz2",
 
     "audio"     ".aa  .aac .ac3 .adx .ahx .wav .aiff .mp1 .mp2 .mp3  .mpc .ogg .ape" " "
                 ".asf .au  .aud .dmf .dts .dxd .flac .mmf .mod .opus .ra  .tta     " " "
@@ -21,8 +21,8 @@ CATEGORIES = (
 
     "docs"      ".doc .txt .docx .xls .xlsx .ppt .pptx .dot .odt",
 
-    "work"      ".ai .cdr .yuv .glade .c .cpp .cxx .py .vba .bas .pas .swi" " "
-                ".po .pod .mo  .qxd   .pm",
+    "work"      ".ai .cdr .yuv .glade .c  .cpp .cxx .py .vba .bas .pas .swi" " "
+                ".po .pod .mo  .qxd   .pm .dat",
 
     "internet"  ".url .html .css",
 
