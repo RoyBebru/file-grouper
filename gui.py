@@ -393,10 +393,11 @@ class FileGrouperWindow(wx.Frame):
                 else:
                     # File
                     (category, name, ext) = core.find_category(item.GetText())
+                    if not bool(category):
+                        # Category is absent for this file extension
+                        continue
                     # Sanity filename
                     name = name.translate(common.filename_translation_table)
-                    if not bool(category):
-                        category = "_unknown"
                     if category in project_tree:
                         project_tree[category].append(resolve_existent_filename_collision(category, name, ext))
                     else:
