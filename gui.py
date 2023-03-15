@@ -8,7 +8,6 @@ import wx.lib.agw.customtreectrl as ctree
 import os
 from wx.lib.embeddedimage import PyEmbeddedImage
 from pathlib import Path
-import time
 
 import core
 import gui_help
@@ -172,6 +171,8 @@ class FileGrouperWindow(wx.Frame):
             text_dir_from.SetValue(common.option_inspected_dir)
             self.RepresentDir(common.option_inspected_dir, self.tree_from)
             self.PrepareProject()
+        if bool(common.option_inspected_dir):
+            text_dir_to.SetValue(common.option_base_dir)
         if bool(common.option_base_dir):
             text_dir_to.SetValue(common.option_base_dir)
         self.ExamStateStatus()
