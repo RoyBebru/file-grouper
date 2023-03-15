@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-03-14 15:05+0200\n"
+"POT-Creation-Date: 2023-03-15 17:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,39 +15,35 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: core.py:14
+#: core.py:15
 msgid "Usage format: "
 msgstr ""
 
-#: core.py:19
-msgid "      Where <DEST_ROOT_DIR> under '-d'/'--dir' option is the directory to move "
-msgstr ""
-
 #: core.py:20
-msgid "  categorized files per created assigned subdirectories. The <INSPECTED_DIR> "
+msgid "      Where <DEST_ROOT_DIR> under '-d'/'--dir' option is the directory to move"
 msgstr ""
 
 #: core.py:21
-msgid "  directory must be inspected. Option '-t'/'--types' prints file types per category "
+msgid "  categorized files per created assigned subdirectories. The <INSPECTED_DIR>"
 msgstr ""
 
 #: core.py:22
-msgid "  subdirectory and exits. Option '-h'/'--help' prints this text. Option '-l'/'--links'"
+msgid "  directory must be inspected. Option '-t'/'--types' prints file types per category"
 msgstr ""
 
 #: core.py:23
+msgid "  subdirectory and exits. Option '-h'/'--help' prints this text. Option '-l'/'--links'"
+msgstr ""
+
+#: core.py:24
 msgid "  serves to making links instead of moving files. Option '-G'/'--no-gui' disable GUI mode."
 msgstr ""
 
-#: core.py:68
+#: core.py:73
 msgid "*** Warning: only first option '-d' is applied"
 msgstr ""
 
-#: core.py:86
-msgid "*** Error: in option '-d' '%s' must be other than program directory"
-msgstr ""
-
-#: core.py:90
+#: core.py:91
 msgid "*** Error: must be only one inspected directory"
 msgstr ""
 
@@ -55,15 +51,19 @@ msgstr ""
 msgid "*** Error: '%s' is not valid directory"
 msgstr ""
 
-#: core.py:103
+#: core.py:106
 msgid "*** Error: -d directory ('%s') cannot be "
 msgstr ""
 
-#: core.py:104
+#: core.py:107
 msgid "(sub-)directory of the inspected directory ('%s')"
 msgstr ""
 
-#: fig:47
+#: core.py:112
+msgid "*** Error: in option '-d' '%s' must be other than program directory"
+msgstr ""
+
+#: fig:53
 msgid "*** Warning: wxPython module is not installed"
 msgstr ""
 
@@ -163,15 +163,15 @@ msgstr ""
 msgid "Select any category to insert after"
 msgstr ""
 
-#: gui_help.py:180
+#: gui_help.py:181
 msgid "Link"
 msgstr ""
 
-#: gui_help.py:181
+#: gui_help.py:182
 msgid "will be opened in your standard web browser. Continue?"
 msgstr ""
 
-#: gui_help.py:182
+#: gui_help.py:183
 msgid "Confirm"
 msgstr ""
 

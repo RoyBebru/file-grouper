@@ -6,7 +6,7 @@ import platform
 import CONFIG
 
 
-def ConvertExtsStringToSortedList(cat: str):        
+def ConvertExtsStringToSortedList(cat: str):
     cat = cat.strip()
     category_exts = [ext.lower() for ext in cat.split()] # some spaces is equal to one
     category_exts = list(set(category_exts)) # removing duplicates without saving order
@@ -18,7 +18,7 @@ def ConvertExtsStringToSortedList(cat: str):
 
 
 def LoadDefaultCategories():
-    """ Converting CONFIG.CATEGORIES to useful inner representation""" 
+    """ Converting CONFIG.CATEGORIES to useful inner representation"""
     global categories
     for cat in CONFIG.CATEGORIES:
         ix = cat.find('.')
@@ -31,7 +31,7 @@ def LoadDefaultCategories():
 
 
 def LoadDefaultFilenameTranslationTable():
-    """Converting CONFIG.FILENAME_TRANSLATION_TABLE to useful inner representation""" 
+    """Converting CONFIG.FILENAME_TRANSLATION_TABLE to useful inner representation"""
     global filename_translation_table
     for pair in CONFIG.FILENAME_TRANSLATION_TABLE.split(','):
         (key, val) = (pair[:1], pair[1:])

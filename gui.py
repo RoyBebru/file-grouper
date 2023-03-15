@@ -81,9 +81,9 @@ class FileGrouperWindow(wx.Frame):
         button_to.my_prepare_project = False
 
         # Create checkboxes
-        cb_make_links = wx.CheckBox(pnl, label = _("Instead removing do file links")) 
+        cb_make_links = wx.CheckBox(pnl, label = _("Instead removing do file links"))
 
-        #<<< Create From-Tree and To-Tree 
+        #<<< Create From-Tree and To-Tree
 
         # Create image list common for both trees to add icons next to tree items
         tree_imlist = wx.ImageList(16, 16)
@@ -102,7 +102,7 @@ class FileGrouperWindow(wx.Frame):
         self.tree_from.SetItemImage(root, self.tree_fldridx, wx.TreeItemIcon_Normal)
         self.tree_from.SetItemImage(root, self.tree_fldropenidx, wx.TreeItemIcon_Expanded)
 
-        # Create CustomTreeCtrl To Tree instance 
+        # Create CustomTreeCtrl To Tree instance
 
         self.tree_to = ctree.CustomTreeCtrl(pnl, agwStyle=wx.TR_DEFAULT_STYLE|wx.TR_HIDE_ROOT)
 
@@ -179,7 +179,7 @@ class FileGrouperWindow(wx.Frame):
         self.Centre()
 
 
-    def onChecked(self, e): 
+    def onChecked(self, e):
         cb = e.GetEventObject()
         common.option_make_links = cb.GetValue()
 
@@ -312,7 +312,7 @@ class FileGrouperWindow(wx.Frame):
             # Proceed loading the dir chosen by the user
             pathdir = dirDialog.GetPath()
             try:
-                button = event.GetEventObject() 
+                button = event.GetEventObject()
                 button.my_text_ctrl.SetValue(pathdir) # Will be call OnTextFrom()
 
                 if button.my_prepare_project:
@@ -420,7 +420,7 @@ class FileGrouperWindow(wx.Frame):
 
 
     def ExamStateStatus(self):
-        if (bool(common.option_base_dir) 
+        if (bool(common.option_base_dir)
                 and bool(common.option_inspected_dir)
                 and core.AreDirsAdequate()):
             self.button_run.Enable(True)

@@ -16,7 +16,7 @@ try:
    (lang, enc) = locale.getdefaultlocale()
    ix = lang.find('_')
    if ix != -1:
-       lang = lang[:ix] 
+       lang = lang[:ix]
    uk = gettext.translation("fig", localedir='./locale', languages=[lang])
    uk.install()
    _ = uk.gettext # Ukraine

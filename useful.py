@@ -8,7 +8,7 @@ def silent_quit(exit_code=0):
     """
     Do not raise SystemExit exception and quit
     """
-    os._exit(exit_code) 
+    os._exit(exit_code)
 
 def switch_to_background() -> None:
     """

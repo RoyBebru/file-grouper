@@ -12,16 +12,17 @@ msgid "Usage format: "
 msgstr "Формат виклику: "
 
 #: core.py:19
-msgid "      Where <DEST_ROOT_DIR> under '-d'/'--dir' option is the directory to move "
-msgstr "      Де <DEST_ROOT_DIR> в орції '-d'/'--dir' є базовою текою, куди потраплять "
+msgid "      Where <DEST_ROOT_DIR> under '-d'/'--dir' option is the directory to move"
+
+msgstr "      Де <DEST_ROOT_DIR> в орції '-d'/'--dir' є базовою текою, куди потраплять"
 
 #: core.py:20
-msgid "  categorized files per created assigned subdirectories. The <INSPECTED_DIR> "
-msgstr "  файли по текам відповідно до категорій. <INSPECTED_DIR> є тією "
+msgid "  categorized files per created assigned subdirectories. The <INSPECTED_DIR>"
+msgstr "  файли по текам відповідно до категорій. <INSPECTED_DIR> є тією"
 
 #: core.py:21
-msgid "  directory must be inspected. Option '-t'/'--types' prints file types per category "
-msgstr "  текою, що буде проаналізована. Опція '-t'/'--types' виводить розподіл розширень файлів по категоріям "
+msgid "  directory must be inspected. Option '-t'/'--types' prints file types per category"
+msgstr "  текою, що буде проаналізована. Опція '-t'/'--types' виводить розподіл розширень файлів по категоріям"
 
 #: core.py:22
 msgid "  subdirectory and exits. Option '-h'/'--help' prints this text. Option '-l'/'--links'"

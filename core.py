@@ -205,7 +205,7 @@ def action_per_ext(file, ext):
             shutil.unpack_archive(str(file), str(dir))
         except:
             pass
-            
+
 
 def handle_one_path_file(file: Path):
     (purepath_filename, ext) = sanitize_filename(file.name)
