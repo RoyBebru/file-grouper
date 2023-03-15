@@ -71,8 +71,8 @@ class FileGrouperWindow(wx.Frame):
         text_dir_from = wx.TextCtrl(pnl, style=wx.TE_PROCESS_ENTER)
         text_dir_to = wx.TextCtrl(pnl, style=wx.TE_PROCESS_ENTER)
 
-        button_from = wx.BitmapButton(pnl, id=-1, bitmap=bmp_dir_dialog, size=(48, text_dir_from.GetSize()[1]))
-        button_to = wx.BitmapButton(pnl, id=-1, bitmap=bmp_dir_dialog, size=(48, text_dir_to.GetSize()[1]))
+        button_from = wx.BitmapButton(pnl, id=-1, bitmap=bmp_dir_dialog, size=(48, max(text_dir_from.GetSize()[1], 32)))
+        button_to = wx.BitmapButton(pnl, id=-1, bitmap=bmp_dir_dialog, size=(48, max(text_dir_to.GetSize()[1], 32)))
 
         # To reach text ctrl in OnOpen() event handler
         button_from.my_text_ctrl = text_dir_from

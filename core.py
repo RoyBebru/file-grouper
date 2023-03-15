@@ -150,6 +150,7 @@ def resolve_existent_filename_collision(category, name, ext):
 
 
 def sanitize_filename(filename: str):
+    """NORMALIZE filenames"""
     (category, name, ext) = find_category(filename)
     if category == "":
         category = "_unknown"
