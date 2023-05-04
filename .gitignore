@@ -1,0 +1,5 @@
+.venv*/
+build/
+fig.0rig/
+fig.egg-info/
+fig/__pycache__

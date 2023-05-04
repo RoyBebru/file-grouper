@@ -1,0 +1,3 @@
+include fig/locale/uk/LC_MESSAGES/fig.mo
+include fig/help-program-window.png
+include fig/icon-run.png

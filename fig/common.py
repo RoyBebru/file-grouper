@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-import sys
+# import sys
 import platform
 
-import CONFIG
+import fig.CONFIG as CONFIG
 
 
 def ConvertExtsStringToSortedList(cat: str):

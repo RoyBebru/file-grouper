@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
+import os
+from pathlib import Path
+import sys
+import webbrowser
 import wx
 import wx.html
-import webbrowser
-import os
 
 HTML = """
 <h1>File Grouper</h1>
@@ -92,7 +94,11 @@ HTML = """
         <center>
           <table width="1" border="5">
             <tr>
-              <td><img src="help-program-window.png" alt="Main Program Window" width="539" height="397"></td>
+              <td>
+                <img src="""+'"'+str(Path(__file__).parent / "help-program-window.png")+'"'+"""
+                  alt="Main Program Window"
+                  width="539" height="397">
+              </td>
             </tr>
           </table>
           <br/>

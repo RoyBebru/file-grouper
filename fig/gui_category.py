@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import common
+import fig.common as common
 _ = common._ # for i18n
 
 import wx

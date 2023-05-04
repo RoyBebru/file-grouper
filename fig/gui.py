@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 
-import common
+import fig.common as common
 _ = common._ # for i18n
 
 import wx
 import wx.lib.agw.customtreectrl as ctree
 import os
+import sys
 from wx.lib.embeddedimage import PyEmbeddedImage
 from pathlib import Path
 
-import core
-import gui_help
-import gui_category
-# import gui_sanity
+import fig.core as core
+import fig.gui_help as gui_help
+import fig.gui_category as gui_category
 
 OPEN_FOLDER_ICON_BUFFER = PyEmbeddedImage(
     b'iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwY'
@@ -62,7 +62,7 @@ class FileGrouperWindow(wx.Frame):
         label_title_to.SetFont(font)
 
         # Create Run Bitmap Button
-        bmp = wx.Bitmap("icon-run.png");
+        bmp = wx.Bitmap(str(Path(__file__).parent / "icon-run.png"))
         self.button_run = wx.BitmapButton(pnl, id=-1, bitmap=bmp, size=(40,36))
 
         bmp_dir_dialog = OPEN_FOLDER_ICON_BUFFER.GetBitmap();
